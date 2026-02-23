@@ -32,12 +32,6 @@ DISPLAYING USERS INPUT IN THE BOARD??
         # first make winning combinations
         # THEN CHECK IF THE USERS INPUTS HAVE SATISFED THE COMBO ELSE PRINT ITS A DRAW 
 '''
-        winning_combo = [(0,3,6) , (1,4,7) , (2,5,8) , (0,1,2) , (3,4,5) , (6,7,8) , (0,4,8) , (2,4,6)]
-        if X in winning_combo:
-            pass
-        if O in winning_combo:
-            pass
-            ''' 
 
 def boardd():
     board = [" "] * 9
@@ -60,22 +54,16 @@ def boardd():
         print("--------------")
         print(board[6] ,  "|" , board[7] ,  "|" , board[8] , "|" )
 
-        if board[0] == board[1] == board[2] != " ":
-                print("X WINS!!")
-        if board[3] == board[4] == board[5] != " ":
-                print("X WINS!!")
-        if board[6] == board[7] == board[8] != " ":
-                print("X WINS!!")
-        if board[0] == board[3] == board[6] != " ":
-               print("X WINS!!")
-        if board[1] == board[4] == board[7] != " ":
-               print("X WINS!!")
-        if board[2] == board[5] == board[8] != " ":
-               print("X WINS!!")
-        if board[0] == board[4] == board[8] != " ":
-               print("X WINS!!")
-        if board[2] == board[4] == board[6] != " ":
-              print("X WINS!!")
+        if (board[0] == board[1] == board[2] != " " or
+           board[3] == board[4] == board[5] != " " or
+           board[6] == board[7] == board[8] != " " or
+           board[0] == board[3] == board[6] != " " or
+           board[1] == board[4] == board[7] != " " or
+           board[2] == board[5] == board[8] != " " or
+           board[0] == board[4] == board[8] != " " or
+           board[2] == board[4] == board[6] != " " ):
+           print("X WINS!")
+           break
 
         O = int(input("O's turn enter a number (0-8) 10 to quit"))
         if O == 10:
@@ -94,22 +82,16 @@ def boardd():
         print(board[3] , "|" , board[4] , "|" , board[5] , "|" )
         print("--------------")
         print(board[6] , "|" , board[7] , "|" , board[8] , "|" )
-        
-        if board[0] == board[1] == board[2] != " ":
-                print("O WINS!!")
-        if board[3] == board[4] == board[5] != " ":
-                print("O WINS!!")
-        if board[6] == board[7] == board[8] != " ":
-                print("O WINS!!")
-        if board[0] == board[3] == board[6] != " ":
-               print("O WINS!!")
-        if board[1] == board[4] == board[7] != " ":
-               print("O WINS!!")
-        if board[2] == board[5] == board[8] != " ":
-               print("O WINS!!")
-        if board[0] == board[4] == board[8] != " ":
-               print("O WINS!!")
-        if board[2] == board[4] == board[6] != " ":
-              print("O WINS!!")
 
+        if (board[0] == board[1] == board[2] != " " or
+           board[3] == board[4] == board[5] != " " or
+           board[6] == board[7] == board[8] != " " or
+           board[0] == board[3] == board[6] != " " or
+           board[1] == board[4] == board[7] != " " or
+           board[2] == board[5] == board[8] != " " or
+           board[0] == board[4] == board[8] != " " or
+           board[2] == board[4] == board[6] != " " ):
+           print("O WINS!")
+           break
 boardd()
+
