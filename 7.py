@@ -14,17 +14,10 @@ DISPLAYING USERS INPUT IN THE BOARD??
         NOW GIVE A POSITION TO X IN BOARD                            
 '''
 '''
-        '''
-        # I WANT TO MAKE A COMBIANTION OF WINING PATTERS
-        # HOW. 
-        # MAKE A LSIT AND INSIDE TUPLES OF WINING COMBINATIONS
-        #         # '''
         # I HAVE TO AKE THE BAORD CONSTANT RATHER THAN CHNGING DUE TO THE WHILE LOOP FIXED✅✅
-
         # I HAVE TO DECLARE THE WINNERR 
         # HOW.
         # FIRST MAKE A WINNING COMBINATIONS OUTSIDE THE LOOP SO IT DOESNT CHANGES EVERY TIME
-
 
         # CHECK WHO WON 
         # CHECKS DRAW
@@ -94,4 +87,5 @@ def boardd():
            print("O WINS!")
            break
 boardd()
+
 
